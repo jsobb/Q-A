@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for qna in qnaobject %}
+        <p>ㅡㅡㅡㅡㅡㅡㅡ</p>
+        <p>제목 : {{ qna.title }}</p>
+        <p>글 유형 : {{ qna.content_type }}</p>
+        <p>글 내용 : {{ qna.content }}</p>
+        <p>글쓴 날짜 : {{ qna.write_date }}</p>
+        <p>ㅡㅡㅡㅡㅡㅡㅡ</p>
+    {% endfor %}
+</body>
+</html>
+
+{% endblock %}

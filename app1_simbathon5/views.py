@@ -1,5 +1,6 @@
 from django.shortcuts import render,get_object_or_404
 from .models import FAQ
+from .models import QNA
 # Create your views here.
 
 def showmain(request):
@@ -18,3 +19,15 @@ def book(request):
     
 def main(request):
     return render(request, 'app1_simbathon5/main.html')
+
+    
+def qnaView(request):
+    template_name = 'app1_simbathon5/Q&A.html'
+    qna_object = QNA.objects.all()
+    context = {
+        'qnaobject':qna_object
+    }
+    return render(request, template_name, context)
+
+   
+    

@@ -8,9 +8,19 @@ class FAQ(models.Model):
     pub_date = models.CharField(max_length = 100)
     body = models.DateTimeField()
 
+class QNA(models.Model):
+    title = models.CharField(max_length=30)
+    content_type = models.CharField(max_length=20)
+    content = models.TextField()
+    write_date = models.DateTimeField(auto_now_add=True)
+
+
     def __str__(self):
         return self.title
 
     def summary(self):
         return self.body[20]
+
+
+
 
