@@ -1,9 +1,9 @@
 .bg{ 
     background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(../image/배경.jpg);
-    background-color:rgba(0, 0, 0, 0.5); /*살짝 투명한 검정으로 배경색*/ 
+    background-color:rgba(0, 0, 0, 0.5); 
     background-position: center;
     height: 100%;
-    position: absolute; /*다른 요소들 위로 겹쳐질 수 있게함*/ 
+    position: absolute; 
     background-size: cover;
     top:0px;
     left:0px;
